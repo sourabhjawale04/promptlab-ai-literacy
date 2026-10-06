@@ -1,0 +1,900 @@
+/* =====================================================
+   GLOBAL
+===================================================== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: #f4f6f8;
+    color: #17202a;
+    line-height: 1.6;
+}
+
+button,
+select,
+textarea {
+    font-family: inherit;
+}
+
+button {
+    cursor: pointer;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.site-header {
+    background: #111827;
+    color: white;
+    padding: 22px 20px;
+}
+
+.header-inner {
+    max-width: 1150px;
+    margin: auto;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 30px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.brand-mark {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 12px;
+
+    background: white;
+    color: #111827;
+
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.brand h1 {
+    font-size: 25px;
+}
+
+.brand p {
+    font-size: 13px;
+    opacity: 0.7;
+}
+
+.xp-area {
+    width: 220px;
+}
+
+#levelText {
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.xp-text {
+    font-size: 12px;
+    margin-bottom: 5px;
+}
+
+.progress-bar {
+    height: 8px;
+    background: #374151;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+#progressFill {
+    width: 0%;
+    height: 100%;
+    background: white;
+
+    transition: width 0.4s ease;
+}
+
+
+/* =====================================================
+   NAVIGATION
+===================================================== */
+
+.navigation {
+    background: white;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    border-bottom: 1px solid #ddd;
+}
+
+.navigation button {
+    border: none;
+    background: transparent;
+
+    padding: 14px 16px;
+
+    font-weight: 600;
+    color: #374151;
+}
+
+.navigation button:hover {
+    background: #f1f5f9;
+}
+
+
+/* =====================================================
+   MAIN CONTAINER
+===================================================== */
+
+.container {
+    max-width: 1150px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+.section {
+    animation: fadeIn 0.3s ease;
+}
+
+.hidden {
+    display: none !important;
+}
+
+@keyframes fadeIn {
+
+    from {
+        opacity: 0;
+        transform: translateY(5px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* =====================================================
+   HERO
+===================================================== */
+
+.hero {
+    background: white;
+
+    border-radius: 18px;
+
+    padding: 65px 45px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,0.06);
+
+    margin-bottom: 45px;
+}
+
+.badge {
+    display: inline-block;
+
+    padding: 6px 12px;
+
+    border-radius: 20px;
+
+    background: #eef2ff;
+
+    color: #3730a3;
+
+    font-size: 12px;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.hero h2 {
+    font-size: 48px;
+    line-height: 1.15;
+
+    max-width: 750px;
+
+    margin: 0 auto 20px;
+}
+
+.hero h2 span {
+    display: block;
+}
+
+.hero p {
+    max-width: 720px;
+
+    margin: 0 auto 30px;
+
+    color: #5b6573;
+
+    font-size: 17px;
+}
+
+
+/* =====================================================
+   BUTTONS
+===================================================== */
+
+.primary-button {
+    border: none;
+
+    background: #111827;
+    color: white;
+
+    padding: 13px 22px;
+
+    border-radius: 9px;
+
+    font-weight: bold;
+
+    transition: 0.2s;
+}
+
+.primary-button:hover {
+    transform: translateY(-2px);
+    background: #000;
+}
+
+.secondary-button {
+    background: white;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+
+    margin-top: 20px;
+}
+
+
+/* =====================================================
+   LEARNING CYCLE
+===================================================== */
+
+.learning-cycle {
+    margin-bottom: 45px;
+}
+
+.learning-cycle > h2 {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.cycle-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(5, 1fr);
+
+    gap: 15px;
+}
+
+.cycle-card {
+    background: white;
+
+    border-radius: 13px;
+
+    padding: 22px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.cycle-card span {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #64748b;
+}
+
+.cycle-card h3 {
+    margin: 8px 0;
+}
+
+.cycle-card p {
+    font-size: 13px;
+    color: #64748b;
+}
+
+
+/* =====================================================
+   FEATURES
+===================================================== */
+
+.feature-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+
+    margin-bottom: 45px;
+}
+
+.feature-card {
+    background: white;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+}
+
+.feature-icon {
+    font-size: 30px;
+
+    margin-bottom: 12px;
+}
+
+.feature-card p {
+    color: #64748b;
+
+    margin-top: 8px;
+}
+
+
+/* =====================================================
+   RESEARCH
+===================================================== */
+
+.research-box {
+    background: #111827;
+
+    color: white;
+
+    padding: 35px;
+
+    border-radius: 15px;
+
+    margin-top: 35px;
+}
+
+.research-box p {
+    color: #d1d5db;
+}
+
+.research-question {
+    margin-top: 25px;
+
+    padding: 20px;
+
+    background: #1f2937;
+
+    border-radius: 10px;
+}
+
+
+/* =====================================================
+   SECTION HEADINGS
+===================================================== */
+
+.section-heading {
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 35px;
+
+    margin-bottom: 8px;
+}
+
+.section-heading p {
+    color: #64748b;
+}
+
+
+/* =====================================================
+   CARDS
+===================================================== */
+
+.builder-card,
+.detective-card,
+.reflection-card,
+.assessment-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 15px;
+
+    padding: 35px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.03);
+}
+
+
+/* =====================================================
+   PROMPT BUILDER
+===================================================== */
+
+.builder-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 25px;
+
+    margin-bottom: 30px;
+}
+
+.form-group label {
+    display: block;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+select,
+textarea {
+    width: 100%;
+
+    border: 1px solid #cbd5e1;
+
+    border-radius: 8px;
+
+    padding: 12px;
+
+    background: white;
+
+    font-size: 15px;
+}
+
+textarea {
+    min-height: 150px;
+
+    resize: vertical;
+}
+
+.result-box {
+    display: none;
+
+    margin-top: 25px;
+
+    padding: 20px;
+
+    border-radius: 10px;
+
+    background: #f1f5f9;
+
+    border-left: 4px solid #111827;
+}
+
+.result-box.visible {
+    display: block;
+}
+
+.result-box h3 {
+    margin-bottom: 10px;
+}
+
+.learning-note {
+    margin-top: 25px;
+
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 25px;
+
+    border-radius: 12px;
+}
+
+.learning-note p {
+    color: #64748b;
+
+    margin-top: 7px;
+}
+
+
+/* =====================================================
+   DETECTIVE
+===================================================== */
+
+.scenario-selector {
+    display: flex;
+
+    gap: 10px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 20px;
+}
+
+.scenario-selector button {
+    background: white;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 9px 14px;
+
+    border-radius: 8px;
+}
+
+.scenario-selector button:hover {
+    background: #f1f5f9;
+}
+
+.ai-label {
+    display: inline-block;
+
+    background: #fee2e2;
+
+    color: #991b1b;
+
+    padding: 5px 10px;
+
+    border-radius: 5px;
+
+    font-size: 12px;
+
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.ai-output {
+    background: #f8fafc;
+
+    border: 1px solid #e2e8f0;
+
+    padding: 25px;
+
+    border-radius: 10px;
+
+    margin: 20px 0;
+}
+
+.detective-question {
+    font-weight: bold;
+
+    margin-bottom: 15px;
+}
+
+.answer-grid {
+    display: grid;
+
+    gap: 12px;
+}
+
+.answer-grid button {
+    text-align: left;
+
+    background: white;
+
+    border: 1px solid #cbd5e1;
+
+    padding: 14px;
+
+    border-radius: 9px;
+}
+
+.answer-grid button:hover {
+    background: #f8fafc;
+}
+
+
+/* =====================================================
+   PROMPT BATTLE
+===================================================== */
+
+.battle-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+.prompt-card {
+    background: white;
+
+    border: 1px solid #dbe1e8;
+
+    border-radius: 15px;
+
+    padding: 30px;
+}
+
+.prompt-card.featured {
+    border: 2px solid #111827;
+}
+
+.prompt-label {
+    font-size: 12px;
+
+    font-weight: bold;
+
+    color: #64748b;
+
+    margin-bottom: 15px;
+}
+
+.prompt-card p {
+    min-height: 140px;
+
+    margin-bottom: 20px;
+}
+
+.prompt-card button {
+    border: none;
+
+    background: #111827;
+
+    color: white;
+
+    padding: 11px 18px;
+
+    border-radius: 8px;
+}
+
+
+/* =====================================================
+   REFLECTION
+===================================================== */
+
+.reflection-card h3 {
+    margin-bottom: 8px;
+}
+
+.reflection-card p {
+    color: #64748b;
+
+    margin-bottom: 20px;
+}
+
+
+/* =====================================================
+   ASSESSMENT
+===================================================== */
+
+.question {
+    margin-bottom: 30px;
+}
+
+.question h3 {
+    margin-bottom: 15px;
+}
+
+.question label {
+    display: block;
+
+    padding: 8px 0;
+
+    color: #475569;
+}
+
+.question input {
+    margin-right: 8px;
+}
+
+
+/* =====================================================
+   DASHBOARD
+===================================================== */
+
+.dashboard-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, 1fr);
+
+    gap: 20px;
+}
+
+.stat-card {
+    background: white;
+
+    border: 1px solid #e5e7eb;
+
+    border-radius: 14px;
+
+    padding: 30px;
+
+    text-align: center;
+}
+
+.stat-number {
+    display: block;
+
+    font-size: 32px;
+
+    font-weight: bold;
+
+    margin-bottom: 5px;
+}
+
+.stat-label {
+    color: #64748b;
+
+    font-size: 14px;
+}
+
+.achievement-card {
+    background: white;
+
+    border-radius: 15px;
+
+    border: 1px solid #e5e7eb;
+
+    padding: 30px;
+
+    margin-top: 25px;
+}
+
+.achievement-list {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, 1fr);
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+.achievement {
+    padding: 15px;
+
+    border-radius: 9px;
+
+    background: #f1f5f9;
+
+    font-weight: bold;
+}
+
+.achievement.unlocked {
+    background: #dcfce7;
+
+    color: #166534;
+}
+
+.achievement.locked {
+    opacity: 0.45;
+}
+
+.evaluation-flow {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+
+    margin-top: 20px;
+
+    align-items: center;
+}
+
+.evaluation-flow span {
+    background: #374151;
+
+    padding: 8px 12px;
+
+    border-radius: 6px;
+
+    font-size: 13px;
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+footer {
+    background: #111827;
+
+    color: white;
+
+    margin-top: 60px;
+
+    padding: 35px 20px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 30px;
+
+    flex-wrap: wrap;
+}
+
+footer p {
+    color: #9ca3af;
+
+    margin-top: 5px;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 850px) {
+
+    .header-inner {
+        flex-direction: column;
+
+        align-items: flex-start;
+    }
+
+    .xp-area {
+        width: 100%;
+    }
+
+    .hero h2 {
+        font-size: 35px;
+    }
+
+    .cycle-grid {
+        grid-template-columns:
+            repeat(2, 1fr);
+    }
+
+    .feature-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .builder-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .battle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .achievement-list {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+
+@media (max-width: 550px) {
+
+    .hero {
+        padding: 40px 20px;
+    }
+
+    .hero h2 {
+        font-size: 30px;
+    }
+
+    .cycle-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .navigation button {
+        padding: 10px;
+        font-size: 12px;
+    }
+
+}

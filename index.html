@@ -1,0 +1,1242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PromptLab | Critical AI Literacy</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="site-header">
+
+    <div class="header-inner">
+
+        <div class="brand">
+            <div class="brand-mark">P</div>
+
+            <div>
+                <h1>PromptLab</h1>
+                <p>Critical Generative AI Literacy</p>
+            </div>
+        </div>
+
+        <div class="xp-area">
+            <div id="levelText">AI Explorer</div>
+
+            <div class="xp-text">
+                <span id="xpText">XP: 0 / 100</span>
+            </div>
+
+            <div class="progress-bar">
+                <div id="progressFill"></div>
+            </div>
+        </div>
+
+    </div>
+
+</header>
+
+
+<nav class="navigation">
+
+    <button onclick="showSection('home')">
+        Home
+    </button>
+
+    <button onclick="showSection('assessment')">
+        Assessment
+    </button>
+
+    <button onclick="showSection('builder')">
+        Prompt Builder
+    </button>
+
+    <button onclick="showSection('detective')">
+        AI Detective
+    </button>
+
+    <button onclick="showSection('battle')">
+        Prompt Battle
+    </button>
+
+    <button onclick="showSection('reflection')">
+        Reflection
+    </button>
+
+    <button onclick="showSection('dashboard')">
+        Dashboard
+    </button>
+
+</nav>
+
+
+<main class="container">
+
+
+<!-- =====================================================
+     HOME
+===================================================== -->
+
+<section id="home" class="section">
+
+    <div class="hero">
+
+        <div class="badge">
+            Experimental Learning Prototype
+        </div>
+
+        <h2>
+            Learn AI by
+            <span>experimenting with it.</span>
+        </h2>
+
+        <p>
+            PromptLab is a gamified learning environment designed
+            to help students develop critical generative AI literacy,
+            prompt-engineering skills and the ability to evaluate
+            AI-generated information.
+        </p>
+
+        <button class="primary-button"
+                onclick="showSection('assessment')">
+            Start Learning →
+        </button>
+
+    </div>
+
+
+    <div class="learning-cycle">
+
+        <h2>Learning Cycle</h2>
+
+        <div class="cycle-grid">
+
+            <div class="cycle-card">
+                <span>01</span>
+                <h3>Predict</h3>
+                <p>
+                    Think about what an AI system might produce
+                    before seeing the result.
+                </p>
+            </div>
+
+            <div class="cycle-card">
+                <span>02</span>
+                <h3>Prompt</h3>
+                <p>
+                    Build a structured prompt using context,
+                    task, audience and constraints.
+                </p>
+            </div>
+
+            <div class="cycle-card">
+                <span>03</span>
+                <h3>Compare</h3>
+                <p>
+                    Observe how changing a prompt changes
+                    the resulting response.
+                </p>
+            </div>
+
+            <div class="cycle-card">
+                <span>04</span>
+                <h3>Verify</h3>
+                <p>
+                    Question claims instead of automatically
+                    trusting fluent AI-generated text.
+                </p>
+            </div>
+
+            <div class="cycle-card">
+                <span>05</span>
+                <h3>Reflect</h3>
+                <p>
+                    Explain what you learned and how you
+                    would use AI differently next time.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="feature-grid">
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🧩</div>
+
+            <h3>Prompt Engineering</h3>
+
+            <p>
+                Learn how context, task, audience and constraints
+                influence AI responses.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🔍</div>
+
+            <h3>Critical Evaluation</h3>
+
+            <p>
+                Learn why confident AI-generated information
+                still needs verification.
+            </p>
+
+        </div>
+
+
+        <div class="feature-card">
+
+            <div class="feature-icon">🎮</div>
+
+            <h3>Learning Through Interaction</h3>
+
+            <p>
+                Use challenges, comparison and reflection
+                instead of passive rule memorisation.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="research-box">
+
+        <h2>Research Perspective</h2>
+
+        <p>
+            PromptLab explores whether students can develop stronger
+            critical AI-literacy skills through experimentation,
+            controlled comparison and reflection.
+        </p>
+
+        <div class="research-question">
+            <strong>Guiding question:</strong>
+
+            <p>
+                Can students develop stronger critical AI-literacy
+                skills by experimenting with AI outputs and reflecting
+                on their behaviour rather than learning prompt-engineering
+                rules through explanation alone?
+            </p>
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     ASSESSMENT
+===================================================== -->
+
+<section id="assessment" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Step 1
+        </div>
+
+        <h2>AI Literacy Pre-Assessment</h2>
+
+        <p>
+            Before starting the activities, estimate your current
+            confidence and understanding.
+        </p>
+
+    </div>
+
+
+    <div class="assessment-card">
+
+        <div class="question">
+
+            <h3>
+                1. How confident are you when evaluating whether
+                an AI-generated claim is reliable?
+            </h3>
+
+            <label>
+                <input type="radio" name="q1" value="1">
+                1 — Not confident
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="3">
+                3 — Neutral
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="q1" value="5">
+                5 — Very confident
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                2. How familiar are you with prompt engineering?
+            </h3>
+
+            <label>
+                <input type="radio" name="q2" value="1">
+                1 — Not familiar
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="3">
+                3 — Somewhat familiar
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="q2" value="5">
+                5 — Very familiar
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                3. How often do you verify information produced by AI?
+            </h3>
+
+            <label>
+                <input type="radio" name="q3" value="1">
+                1 — Never
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="3">
+                3 — Sometimes
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="q3" value="5">
+                5 — Always
+            </label>
+
+        </div>
+
+
+        <button class="primary-button"
+                onclick="submitPreAssessment()">
+            Save Assessment →
+        </button>
+
+        <div id="assessmentResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROMPT BUILDER
+===================================================== -->
+
+<section id="builder" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Activity 1
+        </div>
+
+        <h2>Prompt Builder</h2>
+
+        <p>
+            Build a stronger prompt by controlling four important
+            variables.
+        </p>
+
+    </div>
+
+
+    <div class="builder-card">
+
+        <div class="builder-grid">
+
+            <div class="form-group">
+
+                <label>
+                    1. Context
+                </label>
+
+                <select id="context">
+
+                    <option value="">
+                        Select context
+                    </option>
+
+                    <option value="You are advising an international university student">
+                        International university student
+                    </option>
+
+                    <option value="You are helping a social science student">
+                        Social science student
+                    </option>
+
+                    <option value="You are helping a beginner learn AI literacy">
+                        Beginner learning AI literacy
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    2. Task
+                </label>
+
+                <select id="task">
+
+                    <option value="">
+                        Select task
+                    </option>
+
+                    <option value="Explain the concept clearly">
+                        Explain a concept
+                    </option>
+
+                    <option value="Compare two possible approaches">
+                        Compare approaches
+                    </option>
+
+                    <option value="Create a practical step-by-step guide">
+                        Create a practical guide
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    3. Audience
+                </label>
+
+                <select id="audience">
+
+                    <option value="">
+                        Select audience
+                    </option>
+
+                    <option value="Use language suitable for a complete beginner">
+                        Complete beginner
+                    </option>
+
+                    <option value="Use language suitable for a university student">
+                        University student
+                    </option>
+
+                    <option value="Use technically precise language">
+                        Technical audience
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div class="form-group">
+
+                <label>
+                    4. Constraints
+                </label>
+
+                <select id="constraints">
+
+                    <option value="">
+                        Select constraints
+                    </option>
+
+                    <option value="Keep the answer under 200 words and include one example">
+                        Under 200 words + example
+                    </option>
+
+                    <option value="Explain assumptions and mention uncertainties">
+                        Explain assumptions + uncertainties
+                    </option>
+
+                    <option value="Structure the answer using headings and bullet points">
+                        Headings + bullet points
+                    </option>
+
+                </select>
+
+            </div>
+
+        </div>
+
+
+        <button class="primary-button"
+                onclick="buildPrompt()">
+            Build My Prompt
+        </button>
+
+
+        <div id="builderResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+
+    <div class="learning-note">
+
+        <h3>Why this matters</h3>
+
+        <p>
+            A prompt is not simply a question. Context, task,
+            audience and constraints communicate what the user
+            actually wants the AI system to do.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AI DETECTIVE
+===================================================== -->
+
+<section id="detective" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Activity 2
+        </div>
+
+        <h2>AI Output Detective</h2>
+
+        <p>
+            AI-generated text can sound convincing even when
+            some claims are unsupported or incorrect.
+        </p>
+
+    </div>
+
+
+    <div class="scenario-selector">
+
+        <button onclick="loadDetectiveScenario(0)">
+            🎓 University
+        </button>
+
+        <button onclick="loadDetectiveScenario(1)">
+            🔬 Science
+        </button>
+
+        <button onclick="loadDetectiveScenario(2)">
+            📚 History
+        </button>
+
+        <button onclick="loadDetectiveScenario(3)">
+            🌍 Social Science
+        </button>
+
+    </div>
+
+
+    <div class="detective-card">
+
+        <div class="ai-label">
+            Fictional AI-generated response
+        </div>
+
+        <h3 id="detectiveTitle">
+            University Scenario
+        </h3>
+
+        <div id="aiOutput"
+             class="ai-output">
+        </div>
+
+        <p class="detective-question">
+            Which statement best describes how you should respond?
+        </p>
+
+
+        <div class="answer-grid">
+
+            <button onclick="detectiveAnswer(1)">
+                A. Trust it because the response sounds confident.
+            </button>
+
+            <button onclick="detectiveAnswer(2)">
+                B. Identify claims that require independent verification.
+            </button>
+
+            <button onclick="detectiveAnswer(3)">
+                C. Assume every detailed statement is factual.
+            </button>
+
+        </div>
+
+
+        <div id="detectiveResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+
+    <div class="learning-note">
+
+        <h3>Key principle</h3>
+
+        <p>
+            <strong>Generate ≠ Verify.</strong>
+        </p>
+
+        <p>
+            Fluency, confidence and detail are not guarantees
+            of factual accuracy.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PROMPT BATTLE
+===================================================== -->
+
+<section id="battle" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Activity 3
+        </div>
+
+        <h2>Prompt Battle</h2>
+
+        <p>
+            Compare two prompts and predict which one is likely
+            to produce a more useful response.
+        </p>
+
+    </div>
+
+
+    <div class="battle-grid">
+
+        <div class="prompt-card">
+
+            <div class="prompt-label">
+                Prompt A
+            </div>
+
+            <p>
+                Explain university life.
+            </p>
+
+            <button onclick="battleAnswer(1)">
+                Choose A
+            </button>
+
+        </div>
+
+
+        <div class="prompt-card featured">
+
+            <div class="prompt-label">
+                Prompt B
+            </div>
+
+            <p>
+                You are an advisor helping an international
+                master's student understand university life in
+                Germany. Explain the main academic, social and
+                administrative aspects in simple language.
+                Give three practical examples and organise the
+                answer using headings and bullet points.
+            </p>
+
+            <button onclick="battleAnswer(2)">
+                Choose B
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <div id="battleResult"
+         class="result-box">
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     REFLECTION
+===================================================== -->
+
+<section id="reflection" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Activity 4
+        </div>
+
+        <h2>Reflect on Your Learning</h2>
+
+        <p>
+            Reflection turns an interaction with an AI system
+            into a learning experience.
+        </p>
+
+    </div>
+
+
+    <div class="reflection-card">
+
+        <h3>
+            What did you learn?
+        </h3>
+
+        <p>
+            Write a short reflection. You can mention something
+            that surprised you, a prompting technique you learned,
+            or something you would verify differently in the future.
+        </p>
+
+        <textarea
+            id="reflection"
+            placeholder="For example: I learned that adding constraints to a prompt can make the desired output clearer..."
+        ></textarea>
+
+
+        <button class="primary-button"
+                onclick="submitReflection()">
+            Submit Reflection
+        </button>
+
+
+        <div id="reflectionResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     DASHBOARD
+===================================================== -->
+
+<section id="dashboard" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Your Progress
+        </div>
+
+        <h2>Learning Dashboard</h2>
+
+        <p>
+            Your progress is stored locally in this browser.
+        </p>
+
+    </div>
+
+
+    <div class="dashboard-grid">
+
+        <div class="stat-card">
+
+            <span class="stat-number"
+                  id="dashboardXP">
+                0
+            </span>
+
+            <span class="stat-label">
+                XP
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-number"
+                  id="activitiesCompleted">
+                0
+            </span>
+
+            <span class="stat-label">
+                Activities
+            </span>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <span class="stat-number"
+                  id="currentLevel">
+                AI Explorer
+            </span>
+
+            <span class="stat-label">
+                Level
+            </span>
+
+        </div>
+
+    </div>
+
+
+    <div class="achievement-card">
+
+        <h2>Achievements</h2>
+
+        <div class="achievement-list">
+
+            <div id="achievementBuilder"
+                 class="achievement locked">
+
+                🧩 Prompt Builder
+
+            </div>
+
+            <div id="achievementDetective"
+                 class="achievement locked">
+
+                🔍 AI Detective
+
+            </div>
+
+            <div id="achievementBattle"
+                 class="achievement locked">
+
+                ⚔️ Prompt Strategist
+
+            </div>
+
+            <div id="achievementReflection"
+                 class="achievement locked">
+
+                🧠 Reflective Learner
+
+            </div>
+
+            <div id="achievementMaster"
+                 class="achievement locked">
+
+                🏆 Critical AI Thinker
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="research-box">
+
+        <h2>Prototype Evaluation</h2>
+
+        <p>
+            A future study could compare pre- and post-activity
+            responses and collect usability feedback.
+        </p>
+
+        <div class="evaluation-flow">
+
+            <span>Pre-Test</span>
+            <span>→</span>
+            <span>PromptLab</span>
+            <span>→</span>
+            <span>Post-Test</span>
+            <span>→</span>
+            <span>Usability Survey</span>
+            <span>→</span>
+            <span>Iteration</span>
+
+        </div>
+
+    </div>
+
+
+    <button class="secondary-button"
+            onclick="resetProgress()">
+        Reset Prototype Progress
+    </button>
+
+</section>
+
+
+<!-- =====================================================
+     POST ASSESSMENT
+===================================================== -->
+
+<section id="postassessment" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Final Assessment
+        </div>
+
+        <h2>Post-Assessment</h2>
+
+        <p>
+            Compare your confidence after completing PromptLab.
+        </p>
+
+    </div>
+
+
+    <div class="assessment-card">
+
+        <div class="question">
+
+            <h3>
+                How confident are you now when evaluating
+                AI-generated information?
+            </h3>
+
+            <label>
+                <input type="radio" name="post1" value="1">
+                1 — Not confident
+            </label>
+
+            <label>
+                <input type="radio" name="post1" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="post1" value="3">
+                3
+            </label>
+
+            <label>
+                <input type="radio" name="post1" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="post1" value="5">
+                5 — Very confident
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                How useful was PromptLab for understanding
+                prompt engineering?
+            </h3>
+
+            <label>
+                <input type="radio" name="post2" value="1">
+                1 — Not useful
+            </label>
+
+            <label>
+                <input type="radio" name="post2" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="post2" value="3">
+                3
+            </label>
+
+            <label>
+                <input type="radio" name="post2" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="post2" value="5">
+                5 — Very useful
+            </label>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                How useful was the AI Detective activity?
+            </h3>
+
+            <label>
+                <input type="radio" name="post3" value="1">
+                1 — Not useful
+            </label>
+
+            <label>
+                <input type="radio" name="post3" value="2">
+                2
+            </label>
+
+            <label>
+                <input type="radio" name="post3" value="3">
+                3
+            </label>
+
+            <label>
+                <input type="radio" name="post3" value="4">
+                4
+            </label>
+
+            <label>
+                <input type="radio" name="post3" value="5">
+                5 — Very useful
+            </label>
+
+        </div>
+
+
+        <button class="primary-button"
+                onclick="submitPostAssessment()">
+            Submit Post-Assessment
+        </button>
+
+
+        <div id="postResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     USABILITY
+===================================================== -->
+
+<section id="usability" class="section hidden">
+
+    <div class="section-heading">
+
+        <div class="badge">
+            Research Feedback
+        </div>
+
+        <h2>Usability Survey</h2>
+
+        <p>
+            This section represents the feedback stage of the
+            proposed evaluation methodology.
+        </p>
+
+    </div>
+
+
+    <div class="assessment-card">
+
+        <div class="question">
+
+            <h3>
+                The instructions were clear.
+            </h3>
+
+            <select id="usability1">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>Strongly disagree</option>
+                <option>Disagree</option>
+                <option>Neutral</option>
+                <option>Agree</option>
+                <option>Strongly agree</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                The activities were engaging.
+            </h3>
+
+            <select id="usability2">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>Strongly disagree</option>
+                <option>Disagree</option>
+                <option>Neutral</option>
+                <option>Agree</option>
+                <option>Strongly agree</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                I understand better why AI outputs need evaluation.
+            </h3>
+
+            <select id="usability3">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>Strongly disagree</option>
+                <option>Disagree</option>
+                <option>Neutral</option>
+                <option>Agree</option>
+                <option>Strongly agree</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                I would use this learning activity again.
+            </h3>
+
+            <select id="usability4">
+
+                <option value="">
+                    Select
+                </option>
+
+                <option>Strongly disagree</option>
+                <option>Disagree</option>
+                <option>Neutral</option>
+                <option>Agree</option>
+                <option>Strongly agree</option>
+
+            </select>
+
+        </div>
+
+
+        <div class="question">
+
+            <h3>
+                What would you improve?
+            </h3>
+
+            <textarea
+                id="usabilityComment"
+                placeholder="Your feedback..."
+            ></textarea>
+
+        </div>
+
+
+        <button class="primary-button"
+                onclick="submitUsability()">
+            Submit Feedback
+        </button>
+
+
+        <div id="usabilityResult"
+             class="result-box">
+        </div>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    <div>
+        <strong>PromptLab</strong>
+        <p>
+            Gamified learning for critical generative AI literacy.
+        </p>
+    </div>
+
+    <div>
+        <p>
+            Prototype developed as an educational research concept.
+        </p>
+    </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
